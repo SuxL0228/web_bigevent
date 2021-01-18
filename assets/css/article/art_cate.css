@@ -9,14 +9,19 @@ body {
   background-color: #f2f3f5;
 }
 
+
 .layui-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.layui-btn-sm {
+  border-radius: 20px 20px 20px 20px;
+}
+
 #form-add,
 #form-edit {
+  padding-right: 20px;
   padding-top: 20px;
-  padding-right: 30px;
 }

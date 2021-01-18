@@ -21,8 +21,11 @@ $(function () {
       data: $(this).serialize(),
       success: function (res) {
         if (res.status !== 0) {
-          return layui.msg('更新密码失败')
+          return layui.layer.msg('更新密码失败')
         }
+        layui.layer.msg('更新密码成功！')
+        // 重置表单
+        $('.layui-form')[0].reset()
       }
     })
   })
